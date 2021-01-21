@@ -10,11 +10,11 @@ public class Main implements Serializable {
         do {
             System.out.println("--chương trình quản lý danh bạ-- ");
             System.out.println("chọn chức năng");
-            System.out.println("1 : xem danh bạ");
-            System.out.println("2 : thêm mới danh bạ");
-            System.out.println("3 : cập nhật");
-            System.out.println("4 : xóa ");
-            System.out.println("5 : tìm kiếm");
+            System.out.println("1 : Thêm mới ");
+            System.out.println("2 : Xem danh bạ");
+            System.out.println("3 : Cập nhật");
+            System.out.println("4 : Tóa ");
+            System.out.println("5 : Tìm kiếm");
             System.out.println("6: Đọc từ file");
             System.out.println("7: Ghi vào file");
             System.out.println("8 : exit ");
@@ -22,11 +22,10 @@ public class Main implements Serializable {
                 index = Integer.parseInt(sc.nextLine());
                 switch (index) {
                     case 1:
-                        phoneManager.showPhone();
-
+                        phoneManager.addPhone();
                         break;
                     case 2:
-                        phoneManager.addPhone();
+                        phoneManager.showPhone();
                         break;
                     case 3:
                         phoneManager.editPhone();

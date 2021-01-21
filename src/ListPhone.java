@@ -88,7 +88,6 @@
                     ", giới tính='" + gender + '\'' +
                     ", địa chỉ='" + address + '\'' +
                     ", ngày sinh='" + DateOfBirth + '\'' +
-                    ", email='" + Email + '\'' +
                     '}';
         }
     }
