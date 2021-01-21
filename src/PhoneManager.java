@@ -1,3 +1,5 @@
+import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
@@ -81,11 +83,11 @@ public class PhoneManager implements Serializable {
             String numberPhone = temp[0];
             String phoneBook = temp[1];
             String name = temp[2];
-            String sex = temp[3];
+            String gender = temp[3];
             String address = temp[4];
             String dateOfBirth = temp[5];
             String email = temp[6];
-            getListPhone().add(new ListPhone(name, numberPhone, address, email, dateOfBirth, phoneBook, sex));
+            getListPhone().add(new ListPhone(numberPhone,phoneBook,name,gender,address,dateOfBirth,email));
         }
         try {
             bufferedReader.close();
