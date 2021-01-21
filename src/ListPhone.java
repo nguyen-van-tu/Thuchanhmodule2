@@ -81,14 +81,14 @@
 
         @Override
         public String toString() {
-            return "ListPhone{" +
-                    "numberPhone='" + numberPhone + '\'' +
-                    ", group='" + group + '\'' +
-                    ", name='" + name + '\'' +
-                    ", sex='" + gender + '\'' +
-                    ", address='" + address + '\'' +
-                    ", DateOfBirth='" + DateOfBirth + '\'' +
-                    ", Email='" + Email + '\'' +
+            return "Danh bạ{" +
+                    "SĐT='" + numberPhone + '\'' +
+                    ", nhóm='" + group + '\'' +
+                    ", tên='" + name + '\'' +
+                    ", giới tính='" + gender + '\'' +
+                    ", địa chỉ='" + address + '\'' +
+                    ", ngày sinh='" + DateOfBirth + '\'' +
+                    ", email='" + Email + '\'' +
                     '}';
         }
     }

@@ -6,9 +6,9 @@ public class Main implements Serializable {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
         Scanner sc = new Scanner(System.in);
         PhoneManager phoneManager = new PhoneManager();
-        int cases = 0;
+        int index = 0;
         do {
-            System.out.println("chương trình quản lý danh bạ ");
+            System.out.println("--chương trình quản lý danh bạ-- ");
             System.out.println("chọn chức năng");
             System.out.println("1 : xem danh bạ");
             System.out.println("2 : thêm mới danh bạ");
@@ -19,8 +19,8 @@ public class Main implements Serializable {
             System.out.println("7: Ghi vào file");
             System.out.println("8 : exit ");
             try {
-                cases = Integer.parseInt(sc.nextLine());
-                switch (cases) {
+                index = Integer.parseInt(sc.nextLine());
+                switch (index) {
                     case 1:
                         phoneManager.showPhone();
 
@@ -45,7 +45,7 @@ public class Main implements Serializable {
             } catch (Exception e) {
                 System.out.println("Mời nhập lại  ");
             }
-        } while (cases != 8);
+        } while (index != 8);
     }
 
 }

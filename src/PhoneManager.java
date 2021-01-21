@@ -109,7 +109,7 @@ public class PhoneManager implements Serializable {
                     boolean check = false;
                     do {
                         System.out.println("nhập sdt");
-                        String s = "^(09|01[2|6|8|9])+([0-9]{8})\\b";
+                        String s = "[0-9]{9}";
                         String line = sc.nextLine();
                         Pattern pattern = Pattern.compile(s);
                         Matcher matcher = pattern.matcher(line);
@@ -117,7 +117,7 @@ public class PhoneManager implements Serializable {
                             listPhone.setNumberPhone(line);
                             check = true;
                         } else {
-                            System.out.println("Vui Lòng Không Để Trống");
+                            System.out.println("Bạn đã nhập sai , nhập lại");
                         }
                     } while (!check);
 
@@ -139,7 +139,7 @@ public class PhoneManager implements Serializable {
                     boolean check1 = false;
                     do {
                         System.out.println("nhập địa chỉ email ");
-                        String s = "^[a-z][a-z0-9_\\.]{5,32}@[a-z0-9]{2,}(\\.[a-z0-9]{2,4}){1,2}$";
+                        String s = "^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)$";
                         String line = sc.nextLine();
                         Pattern pattern = Pattern.compile(s);
                         Matcher matcher = pattern.matcher(line);
@@ -202,7 +202,7 @@ public class PhoneManager implements Serializable {
                 boolean check1 = false;
                 do {
                     System.out.println("nhập địa chỉ email ");
-                    String s = "^[a-z][a-z0-9_\\.]{5,32}@[a-z0-9]{2,}(\\.[a-z0-9]{2,4}){1,2}$";
+                    String s = "^[A-Za-z0-9]+[A-Za-z0-9]*@[A-Za-z0-9]+(\\.[A-Za-z0-9]+)$";
                     String line = sc.nextLine();
                     Pattern pattern = Pattern.compile(s);
                     Matcher matcher = pattern.matcher(line);
